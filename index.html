@@ -1,177 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AssignMent 05</title>
+    <!-- Css Link -->
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- Font AweSome Link -->
+    <script src="https://kit.fontawesome.com/bb3291d151.js" crossorigin="anonymous"></script>
+    <!-- Font Family Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="page">
+    <div id="wrapper">
 
-        <!-- Top Navbar -->
+        <!-- Top Header -->
         <header class="topbar">
-          <div class="logo-area">
-            <div class="logo-box">
-                <img src="./Images/Logo.svg" alt="">
+            <div class="logo-area">
+                <div class="logo-box">
+                    <img src="./Images/Logo.svg" alt="">
+                </div>
+
             </div>
-            
-          </div>
-    
-          <div class="top-right">
-            <div class="task-count">
-              <span class="icon">✔</span>
-              <span class="count">23</span>
+
+            <div class="top-right">
+                <div class="task-count">
+                    <span class="icon"><i class="fa-regular fa-square-check"></i></span>
+                    <span class="count">23</span>
+                </div>
+
+                <div id="change-circle" class="circle"><img src="./Images/cercle-backround.svg" alt=""></div>
             </div>
-    
-            <div class="profile-circle"></div>
-          </div>
         </header>
-    
+
         <!-- Main Layout -->
         <main class="main-layout">
-    
-          <!-- Left Content -->
-          <section class="dashboard">
-    
-            <!-- Top Summary Cards -->
-            <div class="summary-row">
-    
-              <div class="small-card">
-                <div class="small-icon">✔</div>
-                <div>
-                  <p>Task Assigned</p>
-                  <h2>05</h2>
+
+            <!-- Left Content -->
+            <section class="dashboard">
+
+                <!-- Top Summary Cards -->
+                <div class="summary-row">
+
+                    <div class="small-card">
+                        <div class="small-icon"><i class="fa-regular fa-square-check"></i>
+                        </div>
+                        <div>
+                            <p>Task Assigned</p>
+                            <h2>05</h2>
+                        </div>
+                    </div>
+
+                    <div class="banner-card">
+                        <div class="banner-icon"><img src="./Images/celender.svg" alt="" srcset=""></div>
+                        <div>
+                            <h3>Discover Something</h3>
+                            <h3>New Today!</h3>
+                        </div>
+                    </div>
+
+                    <div class="small-card">
+                        <div class="small-icon"><img src="./Images/fi-sr-calendar.svg" alt=""></div>
+                        <div>
+                            <p>Wed ,</p>
+                            <h2>Jul 28 2025</h2>
+                        </div>
+                    </div>
                 </div>
-              </div>
-    
-              <div class="banner-card">
-                <div class="banner-icon">📝</div>
-                <div>
-                  <h3>Discover Something</h3>
-                  <h3>New Today!</h3>
+
+                <!-- Task Cards -->
+                <div class="task-grid">
+
+                    <div class="task-card">
+                        <span class="tag">ShopEase</span>
+                        <h3>Fix Mobile Button Issue</h3>
+                        <div class="desc">Debug using Chrome DevTools, check for overlapping elements.</div>
+                        <div class="task-footer">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button>Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <span class="tag">CloudSync</span>
+                        <h3>Add Dark Mode</h3>
+                        <div class="desc">Store the user's preference in localStorage, update CSS variables.</div>
+                        <div class="task-footer">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button class="disabled-btn">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <span class="tag">SwiftPay</span>
+                        <h3>Optimize Home page</h3>
+                        <div class="desc">Debug using Chrome DevTools, check for overlapping elements.</div>
+                        <div class="task-footer">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button>Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <span class="tag">Meta</span>
+                        <h3>Add new emoji 👌</h3>
+                        <div class="desc">Debug using Chrome DevTools, check for overlapping elements.</div>
+                        <div class="task-footer">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button>Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <span class="tag">Google LLC</span>
+                        <h3>Integrate OpenAI API</h3>
+                        <div class="desc">Debug using Chrome DevTools, check for overlapping elements.</div>
+                        <div class="task-footer">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button>Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <span class="tag">Glassdoor</span>
+                        <h3>Improve Job searching</h3>
+                        <div class="desc">Debug using Chrome DevTools, check for overlapping elements.</div>
+                        <div class="task-footer">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button>Completed</button>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
-    
-              <div class="small-card">
-                <div class="small-icon">📅</div>
-                <div>
-                  <p>Wed ,</p>
-                  <h2>Jul 28 2025</h2>
+            </section>
+
+            <!-- Right Sidebar -->
+            <aside class="activity-panel">
+                <div class="activity-header">
+                    <h3><span><img src="./Images/fi-sr-time-past.svg" alt=""></span> Activity Log</h3>
+                    <button class="clear-btn">Clear History</button>
                 </div>
-              </div>
-            </div>
-    
-            <!-- Task Cards -->
-            <div class="task-grid">
-    
-              <div class="task-card">
-                <span class="tag">ShopEase</span>
-                <h3>Fix Mobile Button Issue</h3>
-                <div class="desc">Debug using Chrome DevTools, check for overlapping elements.</div>
-                <div class="task-footer">
-                  <div>
-                    <p>Deadline</p>
-                    <h4>21 March 2025</h4>
-                  </div>
-                  <button>Completed</button>
+
+                <div class="log-list">
+                    <div class="log-item">
+                        You have Complete The Task Add Dark Mode at 12:48:15 PM
+                    </div>
+                    <div class="log-item">
+                        You have Complete The Task Add Dark Mode at 12:48:15 PM
+                    </div>
                 </div>
-              </div>
-    
-              <div class="task-card">
-                <span class="tag">CloudSync</span>
-                <h3>Add Dark Mode</h3>
-                <div class="desc">Store the user's preference in localStorage, update CSS variables.</div>
-                <div class="task-footer">
-                  <div>
-                    <p>Deadline</p>
-                    <h4>21 March 2025</h4>
-                  </div>
-                  <button class="disabled-btn">Completed</button>
-                </div>
-              </div>
-    
-              <div class="task-card">
-                <span class="tag">SwiftPay</span>
-                <h3>Optimize Home page</h3>
-                <div class="desc">Debug using Chrome DevTools, check for overlapping elements.</div>
-                <div class="task-footer">
-                  <div>
-                    <p>Deadline</p>
-                    <h4>21 March 2025</h4>
-                  </div>
-                  <button>Completed</button>
-                </div>
-              </div>
-    
-              <div class="task-card">
-                <span class="tag">Meta</span>
-                <h3>Add new emoji 👌</h3>
-                <div class="desc">Debug using Chrome DevTools, check for overlapping elements.</div>
-                <div class="task-footer">
-                  <div>
-                    <p>Deadline</p>
-                    <h4>21 March 2025</h4>
-                  </div>
-                  <button>Completed</button>
-                </div>
-              </div>
-    
-              <div class="task-card">
-                <span class="tag">Google LLC</span>
-                <h3>Integrate OpenAI API</h3>
-                <div class="desc">Debug using Chrome DevTools, check for overlapping elements.</div>
-                <div class="task-footer">
-                  <div>
-                    <p>Deadline</p>
-                    <h4>21 March 2025</h4>
-                  </div>
-                  <button>Completed</button>
-                </div>
-              </div>
-    
-              <div class="task-card">
-                <span class="tag">Glassdoor</span>
-                <h3>Improve Job searching</h3>
-                <div class="desc">Debug using Chrome DevTools, check for overlapping elements.</div>
-                <div class="task-footer">
-                  <div>
-                    <p>Deadline</p>
-                    <h4>21 March 2025</h4>
-                  </div>
-                  <button>Completed</button>
-                </div>
-              </div>
-    
-            </div>
-          </section>
-    
-          <!-- Right Sidebar -->
-          <aside class="activity-panel">
-            <div class="activity-header">
-              <h3>⏲ Activity Log</h3>
-              <button class="clear-btn">Clear History</button>
-            </div>
-    
-            <div class="log-list">
-              <div class="log-item">
-                You have Complete The Task Add Dark Mode at 12:48:15 PM
-              </div>
-              <div class="log-item">
-                You have Complete The Task Add Dark Mode at 12:48:15 PM
-              </div>
-            </div>
-          </aside>
-    
+            </aside>
+
         </main>
-      </div>
+    </div>
 
- 
 
-    
+
+
 
     <script src="./app.js"></script>
 </body>
+
 </html>
