@@ -11,7 +11,7 @@ body {
 
 #wrapper {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1400px;
     margin: 24px auto;
 }
 
@@ -71,13 +71,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .task-count .icon i {
     color: #fff;
     font-size: 20px;
-    
 }
 
 .task-count .count {
@@ -90,70 +88,75 @@ body {
     letter-spacing: 0.96px;
 }
 
-
-
-/* ======================
-     MAIN LAYOUT
-  ====================== */
+/* MAIN LAYOUT */
 .main-layout {
     display: grid;
-    grid-template-columns: 1fr 270px;
-    gap: 18px;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
 }
 
-/* ======================
-     DASHBOARD LEFT
-  ====================== */
+/* DASHBOARD LEFT */
 .dashboard {
     background: #FFF;
     border-radius: 16px;
-    padding: 18px;
+    padding: 24px;
 }
 
 .summary-row {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 18px;
-    padding-bottom: 22px;
-    border-bottom: 1px dashed #d9dfec;
+    padding-bottom: 32px;
+    border-bottom: 1px dashed rgba(55, 82, 253, 0.20);
 }
 
 .small-card {
-    background: #eef1f8;
-    border-radius: 16px;
-    padding: 16px;
+    background: #F4F7FF;
+    border-radius: 12px;
+    padding: 12px;
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 8px;
 }
 
 .small-icon {
-    width: 46px;
-    height: 46px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    background: white;
+    background: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 28px;
+}
+
+.small-icon i {
+    color: #3247ff;
 }
 
 .small-card p {
-    color: #5b6b7d;
-    font-size: 14px;
-    margin-bottom: 4px;
+    color: var(--Text, #00303C);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
 }
 
 .small-card h2 {
-    font-size: 20px;
-    color: #11324d;
+    color: var(--Text, #00303C);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
 }
 
 .banner-card {
     background: linear-gradient(90deg, #3247ff, #8a95ff);
     color: white;
     border-radius: 16px;
-    padding: 20px 24px;
+    padding: 24px 24px;
     display: flex;
     align-items: center;
     gap: 18px;
@@ -164,57 +167,89 @@ body {
 }
 
 .banner-card h3 {
-    font-size: 18px;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: normal;
+    letter-spacing: 0.72px;
 }
 
-/* ======================
-     TASK GRID
-  ====================== */
+.small-card-content p {
+    color: var(--Text, #00303C);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+}
+
+.small-card-content h3 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.66px;
+}
+
+/* TASK GRID */
 .task-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    padding-top: 22px;
+    gap: 24px;
+    padding-top: 32px;
 }
 
 .task-card {
-    background: #eef1f8;
+    background: #F4F7FF;
     border-radius: 16px;
-    padding: 18px;
+    padding: 24px;
 }
 
 .tag {
     display: inline-block;
-    background: #f8f9fc;
-    color: #4c6073;
-    padding: 8px 12px;
+    background: #FFF;
+    padding: 8px 16px;
     border-radius: 8px;
-    font-size: 13px;
+    color: var(--Text, #00303C);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
     margin-bottom: 16px;
 }
 
 .task-card h3 {
-    font-size: 18px;
-    color: #14324a;
-    margin-bottom: 18px;
-    line-height: 1.4;
+    color: var(--Text, #00303C);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.22px;
 }
 
 .desc {
-    background: #f8f9fc;
-    border-radius: 10px;
-    padding: 14px 12px;
-    color: #7a8795;
-    font-size: 14px;
-    line-height: 1.5;
+
+    background: #FFF;
+    border-radius: 8px;
+    padding: 16px;
+    overflow: hidden;
+    color: #000;
+    opacity: 0.5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
     margin-bottom: 18px;
+    margin-top: 16px;
     min-height: 72px;
 }
 
 .task-footer {
-    border-top: 1px dashed #d9dfec;
+    border-top: 1px dashed rgba(55, 82, 253, 0.20);
+    ;
     padding-top: 14px;
     display: flex;
     justify-content: space-between;
@@ -223,34 +258,39 @@ body {
 }
 
 .task-footer p {
-    font-size: 13px;
-    color: #728196;
-    margin-bottom: 4px;
+    color: var(--Text, #00303C);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
 }
 
 .task-footer h4 {
-    font-size: 15px;
-    color: #14324a;
+    color: var(--Text, #00303C);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
 }
 
 .task-footer button {
-    background: #3f56ff;
+    background: #3752FD;
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 10px 16px;
-    font-size: 14px;
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
     cursor: pointer;
 }
 
-.disabled-btn {
-    opacity: 0.45;
-    cursor: not-allowed;
-}
-
-/* ======================
-     RIGHT SIDEBAR
-  ====================== */
+/* RIGHT SIDEBAR */
 .activity-panel {
     background: #FFF;
     border-radius: 16px;
@@ -260,21 +300,37 @@ body {
 .activity-header {
     text-align: center;
     padding-bottom: 18px;
-    border-bottom: 1px dashed #d9dfec;
+    border-bottom: 1px dashed rgba(55, 82, 253, 0.20);
+}
+
+.activity-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.active-img {
+    width: 24px;
+    height: 24px;
 }
 
 .activity-header h3 {
-    font-size: 22px;
-    color: #14324a;
+    color: #00303C;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.6px;
     margin-bottom: 14px;
 }
 
 .clear-btn {
-    background: #3f56ff;
+    background: #3752FD;
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 12px 18px;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
@@ -286,10 +342,16 @@ body {
 }
 
 .log-item {
-    background: #eef1f8;
-    color: #5f6f80;
-    padding: 14px;
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 1.5;
+    background: #F4F7FF;
+    padding: 10px;
+    border-radius: 8px;
+    color: #000;
+    opacity: 0.7;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+
+
 }
