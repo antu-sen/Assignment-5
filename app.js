@@ -2,10 +2,11 @@ const completeBtn = document.querySelectorAll(".task-card button");
 const taskAssignedElement = document.getElementById("taskAssigend");
 const counterElement = document.getElementById("count");
 const activityLog = document.getElementById("activity-log");
-let clickedCount = 0; 
+const logContainer = document.getElementById("log-list");
+
+let clickedCount = 0;
 
 for (let i = 0; i < completeBtn.length; i++) {
-
   const btn = completeBtn[i];
   btn.addEventListener("click", function () {
     alert("Board Update Successfully");
@@ -21,8 +22,23 @@ for (let i = 0; i < completeBtn.length; i++) {
     btn.disabled = true;
 
     clickedCount = clickedCount + 1;
-    if(clickedCount === completeBtn.length){
-        alert("All tasks are complete");
+    if (clickedCount === completeBtn.length) {
+      alert("All tasks are complete");
+    }
+
+    const taskName = btn.closest(".task-card").querySelector("h3").innerText;
+    const currentTime = new Date().toLocaleDateString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+
+    const logEntry = document.createElement("p");
+    logEntry.innerText = ` You Have Complete The Task. Add Dark Mode. "${taskName}" at ${currentTime}`;
+
+    logContainer.appendChild(logEntry);
+
+    if (parseInt(taskAssignedElement.innerText) === 0) {
+      alert("Congrates !!! You Have Completed Tasks");
     }
   });
 }
@@ -38,8 +54,7 @@ changeCircle.addEventListener("click", function () {
   document.body.style.backgroundColor = randomColor;
 });
 
-const bannerCard =  document.querySelector(".banner-card");
-bannerCard.addEventListener("click", function(){
-    window.location.href = "blog.html";
-   
-})
+const bannerCard = document.querySelector(".banner-card");
+bannerCard.addEventListener("click", function () {
+  window.location.href = "blog.html";
+});
