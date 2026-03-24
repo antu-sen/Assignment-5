@@ -78,7 +78,7 @@ body {
     font-size: 20px;
 }
 
-.task-count .count {
+.task-count #count {
     color: #1E1E1E;
     text-align: center;
     font-size: 32px;
@@ -117,6 +117,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
 
 .small-icon {
@@ -160,6 +161,7 @@ body {
     display: flex;
     align-items: center;
     gap: 18px;
+    cursor: pointer;
 }
 
 .banner-icon {
@@ -198,12 +200,14 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     padding-top: 32px;
+    align-items: start;
 }
 
 .task-card {
     background: #F4F7FF;
     border-radius: 16px;
     padding: 24px;
+    height: 100%;
 }
 
 .tag {
@@ -222,7 +226,7 @@ body {
 
 .task-card h3 {
     color: var(--Text, #00303C);
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -290,8 +294,15 @@ body {
     cursor: pointer;
 }
 
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #dcdcdc;
+    color: #666;
+  }
+
 /* RIGHT SIDEBAR */
-.activity-panel {
+#activity-log {
     background: #FFF;
     border-radius: 16px;
     padding: 20px 18px;
